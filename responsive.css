@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* MODIFICATIONS DES STYLES POUR LES DIFFERENTES RESOLUTIONS AVEC LES MEDIA QUERIES @media*/
+
+/* 1 - Smartphones en mode paysage/portrait (767px de large max) et autres mobiles*/
+@media screen and (max-width: 767px), screen and (max-device-width: 767px){
+    body{
+        /* on grossit un peu tous les textes */
+        font-size: 105%;
+        background-color: yellow;
+    }
+    .page{
+        /* On enleve la contrainte de taille de gabarit "page" qui passe en pleine largeur*/
+        width: auto;
+        border: none;
+    }
+    .colonne1, .colonne2, .colonne3,.colonne4, .colonne5, .colonne6, .colonne7, .colonne8, .colonne9, .colonne10, .colonne11, .colonne12{
+      margin-left: 1.5%;
+      margin-right: 1.5%;
+      width: 97%;
+    }
+    aside{
+      display: none; /* Uniquement si on ne veut pas que notre image ou notre video apparaisse sur téléphone*/
+    }
+    /* 8 classes utiles en RWD pour afficher/ masquer les blocs selon @media */
+
+    .visible-phone { display: block; }
+    .visible-tablet { display: none; }
+    .visible-desktop { display: none; }
+    .visible-large { display: none; }
+    .visible-touch { display: block; }
+    .hidden-phone { display: none; }
+    .hidden-tablet { display: block; }
+    .hidden-desktop { display: block; }
+    .hidden-large { display: block; }
+    .hidden-touch { display: none; }
+
+    .about__title{
+      text-align: center;
+    }
+    .project{
+      display: grid;
+      grid-template-column: repeat(2, 1fr);
+      background-color: #333333;
+      grid-gap: 10px;
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+    .template1__link{
+      grid-column: 1;
+      width: 80vw;
+      height: 60vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+    }
+    .template1__text{
+      grid-column: 2 / 12;
+      height: 30vh;
+      width: 100%;
+    }
+    .template1__image{
+      grid-column: 2 / 12;
+      object-fit: cover;
+      margin-top: 60vh;
+    }
+    .template1__part{
+      width: 100%;
+    }
+}
+
+/* 2- Ipad/Tablette */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    body{
+        /* On rapetisse tous les textes pour gagner de la place*/
+        font-size: 90%;
+        background-color: #11b60d;
+    }
+    .page{
+        /* Gabarit pleine page avec une petite marge */
+        width: 96%;
+    }
+    .bloclogo{
+        margin: 0 auto;
+        float: none;
+    }
+    header nav{
+        float: none;
+    }
+    header nav ul li{
+      text-align: center;
+    }
+    .visible-phone { display: none; }
+    .visible-tablet { display: block; }
+    .visible-desktop { display: none; }
+    .visible-large { display: none; }
+    .visible-touch { display: block; }
+    .hidden-phone { display: block; }
+    .hidden-tablet { display: none; }
+    .hidden-desktop { display: block; }
+    .hidden-large { display: block; }
+    .hidden-touch { display: none; }
+}
+/* 3 - affichage PC standard : version 960px */
+@media screen and (min-width: 1025px) and (max-width: 1299px){
+    body{
+        background-color:#00C3FF;
+    }
+    .page{
+        width: 960px;
+    }
+    header nav{
+      float: left;
+    }
+    .visible-phone { display: none; }
+    .visible-tablet { display: none; }
+    .visible-desktop { display: block; }
+    .visible-large { display: none; }
+    .visible-touch { display: block; }
+    .hidden-phone { display: block; }
+    .hidden-tablet { display: block; }
+    .hidden-desktop { display: none; }
+    .hidden-large { display: block; }
+    .hidden-touch { display: none; }
+}
+/* 4 - Large : affichage HD */
+@media screen and (min-width: 1300px){
+    body {
+        font-size: 100%;
+        background-color: #fff;
+    }
+    .page{
+        width: 90%;
+        max-width: 1400px;
+    }
+    .visible-phone { display: none; }
+    .visible-tablet { display: none; }
+    .visible-desktop { display: none; }
+    .visible-large { display: block; }
+    .visible-touch { display: block; }
+    .hidden-phone { display: block; }
+    .hidden-tablet { display: block; }
+    .hidden-desktop { display: block; }
+    .hidden-large { display: none; }
+    .hidden-touch { display: none; }
+}

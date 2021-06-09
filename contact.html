@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <title>Contact</title>
+    <meta name="description" content="Une phrase d'environ 170 caractères">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="height=device-height width=device-width, initial-scale=1.0, minimum-scale=1.0 maximum-scale=1.0, user-scalable=no target-densitydpi=device-dpi">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="portfolio, projet, web, webdesign, site internet, design" />
+    <meta name="description" content="Bienvenue sur mon portfolio. Je m'apelle Corentin Mas et je suis webdesigner. Viens découvrir mes projets et mon univers." />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap" rel="stylesheet">
+</head>
+<body class="contact">
+    <header>
+        <div class="container_logo">
+             <a href="index.html"><p class="blanc">Corentin MAS</p></a>
+        </div>
+        <div class="container_list">
+            <ul class="list_1">
+                <a href="index.html"><li class="menu blanc">Work</li></a>
+                <a href="about.html"><li class="menu blanc">About</li></a>
+                <a href="contact.html"><li class="menu blanc">Contact</li></a>
+            </ul>
+        </div>
+
+        <!-- Menu burger responsive-->
+
+        <div class="hidden-large hidden-desktop hidden-tablet visible-phone container_menu">
+            <a href="#lightbox">
+                <div class="container_burger">
+                    <img src="./img/menu-burger_blanc.png" alt="Menu Burger" id="Calque_1">
+                </div>
+            </a>
+            <div id="lightbox">
+            <!-- voile noir -->
+                <div>
+                <!-- Boite blanche de contenu-->
+                    <a href="#">
+                        <div class="container_fermer">
+                            <img src="./img/close.png" alt="Fermer" id="Calque_2">
+                        </div>
+                    </a>
+                    <div class="container_list2">
+                        <ul class="liste-sans-puce">
+                            <li><a href="index.html" class="bouton-bleu">Work</a></li>
+                            <li><a href="about.html" class="bouton-bleu">About</a></li>
+                            <li><a href="contact.html" class="bouton-bleu">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Fin menu burger responsive -->
+    
+    </header>
+    <section class="container_contact">
+        <h1 class="question blanc">Une question ? Une demande ? Envoie moi un mail 👇🏻</h1>
+        <div class="container_input">
+            <form action="send.php">
+                <div class="container_flex">
+                    <input type="text" placeholder="Nom" size="48">
+                    <input type="text" placeholder="Prénom" size="48">
+                </div>
+                <textarea name="" id="" cols="100" rows="10" placeholder="Messages"></textarea>
+                <div class="container-button">
+                    <a href="send.php"><div class="button">Envoyer</div></a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+            <ul>
+                <a href="https://www.facebook.com/corentin.mas.7" target="_blank"><li class="blanc">Facebook</li></a>
+                <a href="https://www.instagram.com/corentinphotos/" target="_blank"><li class="blanc">Instagram</li></a>
+                <a href=""><li class="blanc">LinedIn</li></a>
+            </ul>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="portfolio, projet, web, webdesign, site internet, design" />
+    <meta name="description" content="Bienvenue sur mon portfolio. Je m'apelle Corentin Mas et je suis webdesigner. Viens découvrir mes projets et mon univers." />
+    <title>Corentin MAS</title>
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Début de header -->
+
+
+    <header>
+        <div class="container_logo">
+            <a href="#"><p>Corentin MAS</p></a>
+        </div>
+        <div class="container_list hidden-phone">
+            <ul class="list_1">
+                <a href=""><li class="menu">Work</li></a>
+                <a href="about.html"><li class="menu">About</li></a>
+                <a href="contact.html"><li class="menu">Contact</li></a>
+            </ul>
+        </div>
+
+        <!-- Menu burger responsive-->
+
+        <div class="hidden-large hidden-desktop hidden-tablet visible-phone container_menu">
+            <a href="#lightbox">
+                <div class="container_burger">
+                    <img src="./img/menu-burger.png" alt="Menu Burger" id="Calque_1">
+                </div>
+            </a>
+            <div id="lightbox">
+            <!-- voile noir -->
+                <div>
+                <!-- Boite blanche de contenu-->
+                    <a href="#">
+                        <div class="container_fermer">
+                            <img src="./img/close.png" alt="Fermer" id="Calque_2">
+                        </div>
+                    </a>
+                    <div class="container_list2">
+                        <ul class="liste-sans-puce">
+                            <li><a href="index.html" class="bouton-bleu">Work</a></li>
+                            <li><a href="about.html" class="bouton-bleu">About</a></li>
+                            <li><a href="contact.html" class="bouton-bleu">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fin menu burger responsive -->
+
+    </header>
+
+    <!-- Fin de header -->
+    <div class="container_section">
+        <section class="container_text">
+            <article class="container__text">
+                <h1>Hi ! Bienvenue sur mon portfolio 👋🏻</h1>
+                <div class="container_scroll">
+                    <p>scroll</p>
+                    <div class="line"></div>
+                </div>
+            </article>
+        </section>
+        <section class="container_images">
+            <div class="image">
+                <a href="starbucks.html" class="link_project">
+                    <div class="container_title">
+                        <p>Projet personnel</p>
+                        <p class="title_projet">Projet Starbucks</p>
+                    </div>
+                </a>
+            </div>
+            <div class="image2">
+                <a href="nuitblanche.html" class="blanc">
+                    <div class="container_title">
+                        <p class="blanc">Projet d'école</p>
+                        <p class="title_projet blanc">Projet Nuit Blanche</p>
+                    </div>
+                </a>
+            </div>
+            <div class="image3">
+                <a href="streetmode.html">
+                    <div class="container_title">
+                        <p class="blanc">Projet de fin d'école</p>
+                        <p class="title_projet blanc">Projet Street Mode</p>
+                    </div>
+                </a>
+            </div>
+            <div class="image4">
+                <a href="interest.html">
+                    <div class="container_title">
+                        <p class="blanc">Projet d'école</p>
+                        <p class="title_projet blanc">Projet Interest</p>
+                    </div>
+                </a>
+            </div>
+            <div class="image">
+                <a href="#">
+                    <div class="container_title">
+                        <p class="title_projet">Projet Nuit Blanche</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <ul>
+            <a href="https://www.facebook.com/corentin.mas.7" target="_blank"><li>Facebook</li></a>
+            <a href="https://www.instagram.com/corentinphotos/" target="_blank"><li>Instagram</li></a>
+            <a href="https://www.linkedin.com/in/corentin-mas-621290147/" target="_blank"><li>LinkedIn</li></a>
+        </ul>
+        <div class="container_line">
+            <p>1</p>
+            <div class="line2"></div>
+            <p>5</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/ScrollToPlugin.min.js"></script>
+    <script src="./js/global.js"></script>
+
+</body>
+</html>

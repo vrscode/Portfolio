@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="portfolio, projet, web, webdesign, site internet, design" />
+    <meta name="description" content="Bienvenue sur mon portfolio. Je m'apelle Corentin Mas et je suis webdesigner. Viens découvrir mes projets et mon univers." />
+    <title>Projet Nuit Blanche</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap" rel="stylesheet">
+</head>
+<body class="overflow">
+    <header>
+        <div class="container_logo">
+             <a href="index.html"><p>Corentin MAS</p></a>
+        </div>
+        <div class="container_list">
+            <ul class="list_1">
+                <a href="index.html"><li class="menu">Work</li></a>
+                <a href="about.html"><li class="menu">About</li></a>
+                <a href="contact.html"><li class="menu">Contact</li></a>
+            </ul>
+        </div>
+
+        <!-- Menu burger responsive-->
+
+        <div class="hidden-large hidden-desktop hidden-tablet visible-phone container_menu">
+            <a href="#lightbox">
+                <div class="container_burger">
+                    <img src="./img/menu-burger.png" alt="Menu Burger" id="Calque_1">
+                </div>
+            </a>
+            <div id="lightbox">
+            <!-- voile noir -->
+                <div>
+                <!-- Boite blanche de contenu-->
+                    <a href="#">
+                        <div class="container_fermer">
+                            <img src="./img/close.png" alt="Fermer" id="Calque_2">
+                        </div>
+                    </a>
+                    <div class="container_list2">
+                        <ul class="liste-sans-puce">
+                            <li><a href="index.html" class="bouton-bleu">Work</a></li>
+                            <li><a href="about.html" class="bouton-bleu">About</a></li>
+                            <li><a href="contact.html" class="bouton-bleu">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+     <!-- Fin menu burger responsive -->
+    <section class="container_para">
+        <article class="container_article">
+            <div class="container-titre">
+                <h1 class="titre1">Projet Nuit Blanche</h1>
+            </div>
+            <div class="moins_large">
+                <p class="text"> Projet fait dans le cadre scolaire. La consigne du projet était de créer une charte éditoriale pour l'événement nuit blanche ainsi qu'une web app pour cette dernière.</p>
+                <img src="./img/mock-up-affice-blanc.jpg" alt="">
+                <div class="container_desc1">
+                    <p id="desc">Affiche virtuelle de l'événement Nuit. Version jour</p>
+                </div>
+                <img src="./img/projet_nuit_blanche.jpg" alt="">
+                <div class="container_desc1">
+                    <p id="desc">Affiche virtuelle de l'événement Nuit. Version nuit</p>
+                </div>
+                <div class="container-titre-color">
+                    <h2 class="color-titre">Couleurs</h2>
+                </div>
+                <div class="container_desc">
+                    <div class="container_colors">
+                        <div class="color_bleufonce"></div>
+                        <p>#000087</p>
+                    </div>
+                    <div class="container_exa">
+                        <div class="color_bleuclair"></div>
+                        <p>#106FDE</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+</body>
+</html> 

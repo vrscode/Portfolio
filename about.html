@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="portfolio, projet, web, webdesign, site internet, design" />
+    <meta name="description" content="Bienvenue sur mon portfolio. Je m'apelle Corentin Mas et je suis webdesigner. Viens découvrir mes projets et mon univers." />
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap" rel="stylesheet">
+</head>
+<body class="overflow">
+    <header>
+        <div class="container_logo">
+            <a href="index.html"><p>Corentin MAS</p></a>
+        </div>
+        <div class="container_list">
+            <ul class="list_1">
+                <a href="index.html"><li class="menu">Work</li></a>
+                <a href=""><li class="menu">About</li></a>
+                <a href="contact.html"><li class="menu">Contact</li></a>
+            </ul>
+        </div>
+
+        <!-- Menu burger responsive-->
+
+        <div class="hidden-large hidden-desktop hidden-tablet visible-phone container_menu">
+            <a href="#lightbox">
+                <div class="container_burger">
+                    <img src="./img/menu-burger.png" alt="Menu Burger" id="Calque_1">
+                </div>
+            </a>
+            <div id="lightbox">
+            <!-- voile noir -->
+                <div>
+                <!-- Boite blanche de contenu-->
+                    <a href="#">
+                        <div class="container_fermer">
+                            <img src="./img/close.png" alt="Fermer" id="Calque_2">
+                        </div>
+                    </a>
+                    <div class="container_list2">
+                        <ul class="liste-sans-puce">
+                            <li><a href="index.html" class="bouton-bleu">Work</a></li>
+                            <li><a href="about.html" class="bouton-bleu">About</a></li>
+                            <li><a href="contact.html" class="bouton-bleu">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+            <!-- Fin menu burger responsive -->
+    
+    </header>
+    <section class="container_article">
+        <article>
+            <h1 class="titre">Salut ! Je suis Corentin Mas 👋🏻</h1>
+            <img src="img/moi.jpg" alt="Moi">
+            <div class="moins_large">
+                <p class="text"> Je m'appelle Mas Corentin je suis web designer avec une préférence pour le front-end. Je vis actuellement à Paris, originaire de Montpellier.</p>
+                <p class="text">Je suis actuellement en formation de Web design à WebStart Digital à Paris République. Je suis quelqu'un qui adore le challenge et travailler en groupe afin de partager nos idées.</p>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
